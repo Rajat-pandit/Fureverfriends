@@ -22,7 +22,7 @@ export const Login = () => {
               <form>
                 <TextField style={row} sx={{label: {fontWeight:'600', fontSize:'1rem'}}} fullWidth label="Email" variant="outlined" type="email" placeholder="Enter Email"></TextField>
                 <TextField style={row} sx={{label: {fontWeight:'600', fontSize:'1rem'}}} fullWidth label="Password" variant="outlined" type="password" placeholder="Enter Password"></TextField>
-                <Button type="submit" variant='contained' style={btnStyle}>Login</Button>
+                <Button type="submit" variant='contained' style={btnStyle}>login</Button>
 
 
               </form>

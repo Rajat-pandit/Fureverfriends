@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import {Home} from "./Components/Home";
-import {Login} from "./Components/Login";
+import {Login} from "./Components/login";
 import {Signup} from "./Components/Signup";
 
 function App() {

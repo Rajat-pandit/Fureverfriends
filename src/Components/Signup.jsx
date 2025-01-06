@@ -15,7 +15,7 @@ export const Signup = () => {
               lg:'30vw',
               xl:'20vw',
           },
-            height:'80vh'
+            height:'70vh'
             }}>
               <Typography style={heading}>SignUp</Typography>
               <form>

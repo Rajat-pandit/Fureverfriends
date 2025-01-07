@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate,useLocation } from 'react-router-dom';
 import {Home} from "./Components/Home";
 import {Login} from "./Components/login";
 import {Signup} from "./Components/Signup";
@@ -10,10 +10,12 @@ function App() {
 
   return (
     <>
+    <BrowserRouter>
     <div className="app">
-      <Navbar></Navbar>
-    </div>
-      <BrowserRouter>
+      
+      <NavbarVisibility/>
+    
+      
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
@@ -21,9 +23,14 @@ function App() {
 
 
         </Routes>
+        </div>
       </BrowserRouter>
     </>
-  )
+  );
+}
+const NavbarVisibility=() =>{
+  const location=useLocation();
+  return location.pathname !=='/login' && location.pathname !== '/signup'? <Navbar/>:null;
 }
 
 export default App

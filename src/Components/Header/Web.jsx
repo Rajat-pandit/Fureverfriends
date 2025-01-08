@@ -1,12 +1,15 @@
 import React from 'react';
 import './Header.css';
 import { useNavigate } from 'react-router-dom';
+import { Service } from './Service';
+
 export const Web = () => {
   const navigate=useNavigate();
   const getstarted=()=>{
     navigate('/login');
   }
   return (
+    <div className='web'>
     <div className='header'>
       <img src="./header.jpg" alt="Background" className="header-image" />
       <div className="header-content">
@@ -15,6 +18,8 @@ export const Web = () => {
 
         <button className="btn" onClick={getstarted}> Get Started </button>
       </div>
+    </div>
+    <Service/>
     </div>
   );
 };

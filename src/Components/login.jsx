@@ -9,7 +9,7 @@ export const Login = () => {
   const btnStyle={marginTop:"2rem", fontSize:"1.2rem", fontWeight:"700", backgroundColor:"blue", borderRadius:"0.5rem"}
   const navigate=useNavigate();
   const handlesLogin=()=>{
-    navigate('/home');
+    navigate('/');
   }
   return (
     <>
